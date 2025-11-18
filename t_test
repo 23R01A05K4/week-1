@@ -1,0 +1,8 @@
+x<-c(12,15,14,10,13,15)
+y<- c(14,18,13,16,17,19)
+t_test_res<- t.test(x,y)
+print(t_test_res)
+boxplot(x,y,
+        names = c("groupx","groupy"),
+        main="t-test comparison",
+        col=c("skyblue","pink"))
